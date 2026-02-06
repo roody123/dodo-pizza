@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(#616060, #362f2e, #000000);
+  align-items: center;
+  gap: 1em;
+}
+
+.nav-heading {
+  font-size: 32px;
+  color: #ffa500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-heading:hover {
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+  background-color: #fc7e5b;
+  background-image: url(images/pizza-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffa500;
+  width: 250px;
+  margin: 30px;
+  border-radius: 10%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pizzas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pizza-img {
+  border-radius: 50%;
+}
+
+.description {
+  background-color: #ffbdab;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  color: #424242;
+}
+
+.pizza-name {
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  background: linear-gradient(#616060, #362f2e, #000000);
+}
+
+.footer-img {
+  width: 60px;
+  margin: 20px;
+}
+
+.footer-text {
+  font-size: 32px;
+  color: #ffa500;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 50px;
+}
+
+.price {
+  font-size: 24px;
+  margin-top: -5px;
+  /* background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px; */
+}
+
+del {
+  color: red;
+  margin-left: 10px;
+}
+
+ins {
+  display: inline-block;
+  transform: rotate(-20deg);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: green;
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
